@@ -8,12 +8,51 @@
     font-style: normal;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*quitar el scrol*/
 ::-webkit-scrollbar {
     display: none;
 }
 
 
+div.containerInicial{
+    scroll-snap-align: start;/*hacer el efecto de secciones*/
+   
+    background: linear-gradient(to right, #1b2631, #212f3c);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/*altura al 100% de la ventana*/
+    position: relative;
+    h1.title{
+        background-color: #ffffff00;/*quito el fondo*/
+        font-family: "Boldonse", system-ui;
+        font-size: 12rem;
+        color: #e0b70f;
+        text-shadow: -7px 2px 6px rgba(0, 0, 0, 0.664);
+    }
+ 
+    div.redes{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    /* "efecto" */
+    a img:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+}
 
 
 
